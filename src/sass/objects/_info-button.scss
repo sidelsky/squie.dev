@@ -1,0 +1,40 @@
+// Info button
+.info-button {
+  appearance: none;
+  background: none;
+  border-radius: 0;
+  border: 0;
+  display: inline-block;
+  float: right;
+  outline: none;
+  position: relative;
+  right: -1.8rem;
+  text-decoration: none;
+  top: .8rem;
+
+  // Desktop
+  @include breakpoint($medium) {
+    top: -.3rem;
+    right: -1rem;
+  }
+
+  // Icon
+  &__info-icon {
+    font-size: 1.8rem;
+  }
+
+  // Hover state
+  &:hover {
+    cursor: pointer;
+  }
+
+}
+
+// Is open
+.is-open {
+
+  .info-button {
+    display: none;
+  }
+
+}

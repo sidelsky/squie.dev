@@ -1,0 +1,83 @@
+{
+    "name": "squie",
+    "version": "1.0.0",
+    "description": "wp-gulp-starter",
+    "main": "gulpfile.js",
+    "browser": {
+        "skrollr": "./bower_components/skrollr/src/skrollr.js",
+        "svg-segment": "./bower_components/segment/dist/segment.min.js",
+        "ease": "./bower_components/segment/js/ease.min.js",
+        "echo": "./bower_components/echojs/dist/echo.min.js",
+        "BackgroundCheck": "./bower_components/background-check/background-check.js",
+        "fullpage": "./bower_components/fullpage/dist/jquery.fullpage.js",
+        "jquery-sticky": "./bower_components/jquery-sticky/jquery.sticky.js"
+    },
+    "browserify-shim": {
+        "skrollr": {
+            "exports": "skrollr"
+        },
+        "svg-segment": {
+            "exports": "svg-segment"
+        },
+        "ease": {
+            "exports": "ease"
+        },
+        "echo": {
+            "exports": "echo"
+        },
+        "BackgroundCheck": {
+            "exports": "BackgroundCheck"
+        },
+        "fullpage": {
+            "exports": "fullpage"
+        }
+    },
+    "browserify": {
+        "transform": [
+            "browserify-shim"
+        ]
+    },
+    "dependencies": {
+        "gulp": "^3.9.0",
+        "jquery": "^2.2.0"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.11.1",
+        "browserify": "^12.0.1",
+        "browserify-shim": "^3.8.12",
+        "csswring": "^5.1.0",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^3.1.1",
+        "gulp-cheerio": "^0.6.2",
+        "gulp-concat": "^2.6.0",
+        "gulp-filesize": "0.0.6",
+        "gulp-jshint": "^1.12.0",
+        "gulp-notify": "^2.2.0",
+        "gulp-pleeease": "^2.0.2",
+        "gulp-pngmin": "^0.1.4",
+        "gulp-postcss": "^6.1.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-replace": "^0.5.4",
+        "gulp-sass": "^2.2.0",
+        "gulp-sourcemaps": "^1.6.0",
+        "gulp-svgmin": "^1.2.2",
+        "gulp-svgstore": "^5.0.5",
+        "gulp-uglify": "^1.5.2",
+        "gulp.spritesmith": "^6.2.0",
+        "lost": "^6.7.2",
+        "vinyl-source-stream": "^1.1.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+###GITREPO###"
+    },
+    "author": "Errol Sidelsky",
+    "license": "ISC",
+    "bugs": {
+        "url": "###GITREPO###"
+    },
+    "homepage": "###GITREPO###"
+}

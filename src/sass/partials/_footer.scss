@@ -1,0 +1,35 @@
+.page-footer {
+    background-color: $black;
+    padding: $spacing--small;
+    margin-top: $spacing--small;
+    color: $white;
+
+	&__copyright {
+		@include set-font-size(1.2rem, 1.4rem, 1.6rem);
+        line-height: 1.7;
+		//padding-top: $spacing--tiny;
+		//margin-top: $spacing--tiny;
+		//border-top: $grey 1px solid;
+		letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: left;
+
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &:link {
+                //color: #0000EE;
+                color: currentColor;
+            }
+
+            &:visited {
+                //color: #551A8B;
+                color: currentColor;
+            }
+
+        }
+	}
+
+}

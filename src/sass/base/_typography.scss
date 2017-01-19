@@ -1,0 +1,57 @@
+// scss-lint:disable ColorVariable
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #000;
+  font-family: $font-primary-light;
+  font-size: 1rem;
+  font-smoothing: antialiased;
+  line-height: 1.33;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  margin-bottom: $margin-default / 2;
+}
+
+p,
+li {
+  @include set-font-size(2.3rem, 2.6rem, 2.9rem);
+  margin-bottom: $spacing--small;
+}
+
+h1 {
+  @include set-font-size(3rem, 7rem, 10rem);
+  //font-family: $font-primary-ultra;
+  font-family: $font-primary-black;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+h2 {
+  @include set-font-size(2rem, 3rem, 4rem);
+  //font-family: $font-primary-regular;
+  font-family: $font-primary-black;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+h3 {
+  @include set-font-size(2rem, 2.5rem, 3rem);
+}
+
+h4 {
+  @include set-font-size(2rem, 2rem, 2rem);
+}
+
+blockquote {
+  @include set-font-size(2rem, 2rem, 2rem);
+  margin: 0;
+}

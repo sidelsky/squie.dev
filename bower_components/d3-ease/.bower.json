@@ -1,0 +1,14 @@
+{
+  "name": "d3-ease",
+  "homepage": "https://github.com/d3/d3-ease",
+  "version": "0.7.0",
+  "_release": "0.7.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.7.0",
+    "commit": "2df53e30e8e27aefb1607f8702ada739d83862e7"
+  },
+  "_source": "https://github.com/d3/d3-ease.git",
+  "_target": "^0.7.0",
+  "_originalSource": "d3-ease"
+}

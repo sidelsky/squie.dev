@@ -1,0 +1,155 @@
+html {
+  box-sizing: border-box;
+  font: 62.5%;
+  min-height: 100%;
+  overflow-y: scroll;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   background: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  ::selection {
+    background: $primary-font-color;
+    color: $white;
+    text-shadow: none;
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+ol {
+  padding-left: 0;
+}
+
+hr {
+  border-color: $grey;
+  margin: $margin-default 0;
+}
+
+figure {
+  margin: 0;
+}
+
+blockquote {
+  .quote {
+    quotes: '“' '”' '‘' '’';
+
+    &::before {
+      content: open-quote;
+    }
+
+    &::after {
+      content: close-quote;
+    }
+  }
+}
+
+.logo {
+  max-width: 2.4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row {
+  @include clearfix;
+}
+
+// Bootstrap-style container
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 768px) {
+    width: 750px;
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 970px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1170px;
+  }
+}
+
+// Container that fills the window until a max width
+.container--fill {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1170px;
+  width: auto;
+
+  @media screen and (max-width: 1200px) {
+    padding: 0 20px;
+  }
+
+  @media screen and (max-width: 375px) {
+    padding: 0 10px;
+  }
+}
+
+
+
+body:before,
+body:after {
+    background: $white;
+    content: '';
+    height: $spacing--tiny;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 100;
+
+    // Desktop
+    @include breakpoint($large) {
+        height: $spacing--small;
+    }
+
+}
+
+body:before {
+    top: 0;
+}
+
+body:after {
+    bottom: 0;
+}
+
+body {
+    border-left: $spacing--tiny solid $white;
+    border-right: $spacing--tiny solid $white;
+    padding-top: $spacing--tiny;
+
+    // Desktop
+    @include breakpoint($large) {
+        border-left: $spacing--small solid $white;
+        border-right: $spacing--small solid $white;
+        //padding-top: $spacing--small;
+        padding-top: $spacing--tiny;
+    }
+
+}

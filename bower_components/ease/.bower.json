@@ -1,0 +1,14 @@
+{
+  "name": "ease",
+  "homepage": "https://github.com/mietek/ease",
+  "version": "1.1.0",
+  "_release": "1.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.1.0",
+    "commit": "723b0fa6cb75eb0f5f1b098789aea3576967fce6"
+  },
+  "_source": "https://github.com/mietek/ease.git",
+  "_target": "^1.1.0",
+  "_originalSource": "ease"
+}

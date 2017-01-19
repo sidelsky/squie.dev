@@ -1,0 +1,37 @@
+{
+  "name": "squie",
+  "version": "0.0.0",
+  "homepage": "http://squie.dev",
+  "description": "Wordpress gulp starter",
+  "main": "",
+  "moduleType": [],
+  "authors": [
+    "Errol Sidelsky"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "compass-breakpoint": "breakpoint-sass#~2.6.1",
+    "waypoints": "~4.0.0",
+    "animatewithsass": "~3.2.2",
+    "segment": "https://github.com/lmgonzalves/segment.git",
+    "jquery": "^2.2.0",
+    "skrollr": "^0.6.30",
+    "ease": "^1.1.0",
+    "d3-ease": "^0.7.0",
+    "echojs": "^1.7.3",
+    "background-check": "^1.2.2",
+    "jquery-sticky": "^1.0.3"
+  },
+  "devDependencies": {
+    "fullpage.js": "fullpage#^2.9.2",
+    "panelsnap": "^0.15.1",
+    "jquery-sticky": "^1.0.3"
+  }
+}

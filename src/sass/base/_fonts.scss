@@ -1,0 +1,9 @@
+/*------------------------------------*\
+    FONT FAMILIES
+\*------------------------------------*/
+$font-name: 'geomanist';
+$file-path: 'fonts/#{$font-name}/';
+@include web-font('#{$font-name}-light-webfont', '#{$file-path}', '#{$font-name}-light-webfont');
+@include web-font('#{$font-name}-regular-webfont', '#{$file-path}', '#{$font-name}-regular-webfont');
+@include web-font('#{$font-name}-black-webfont', '#{$file-path}', '#{$font-name}-black-webfont');
+@include web-font('#{$font-name}-ultra-webfont', '#{$file-path}', '#{$font-name}-ultra-webfont');

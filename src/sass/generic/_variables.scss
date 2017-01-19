@@ -1,0 +1,69 @@
+// Grid
+$row-width: 120rem !default;
+$max-width: 80%;
+
+//Colors
+$black: #000;
+$white: #fff;
+$grey: #eee;
+
+//Typefaces
+$arial: 'Arial', sans-serif;
+
+/*------------------------------------*\
+    #Fonts
+    - Light
+    - Reqular - Base for headings
+    - Ultra - Used on large headings
+\*------------------------------------*/
+$font-primary-light: 'geomanist-light-webfont', Helvetica, Arial, sans-serif;
+$font-primary-regular: 'geomanist-regular-webfont', Helvetica, Arial, sans-serif;
+$font-primary-black: 'geomanist-black-webfont', Helvetica, Arial, sans-serif;
+$font-primary-ultra: 'geomanist-ultra-webfont', Helvetica, Arial, sans-serif;
+
+//Global
+$primary-font: $arial;
+$primary-font-color: $grey;
+$primary-font-size: 16px;
+$primary-font-weight: normal;
+$primary-link-color: $black;
+
+// Colours
+// $color--alpha: #F8B195;
+// $color--beta: #F67280;
+// $color--charlie: #C06C84;
+// $color--delta: #6C5B7B;
+// $color--echo: #355C7D;
+
+
+$color--alpha: #380568;
+$color--beta: #9b07a8;
+//$color--charlie: #f4f1fe;
+$color--delta: #fe2072;
+$color--echo: #0e0d84;
+
+//Font faces
+//@include web-font('Nexa', '../fonts/', 'Nexa_Free_Bold-webfont');
+
+//Breakpoints
+$small: 540px;
+$medium: 768px;
+$large: 1024px;
+$x-large: 1280px;
+$xx-large: 1600px;
+
+//Spacing
+$margin-default: 4rem;
+
+$spacing--tiny: 1rem;
+$spacing--small: 2rem;
+$spacing--medium: 3rem;
+$spacing--large: 4rem;
+
+//Hamburger menu
+$button-width: 18px;                    // The width of the button area
+$button-height: 18px;                   // The height of the button area
+$bar-thickness: 2px;                    // The thickness of the button bars
+$button-pad: 0;                         // The left/right padding between button area and bars.
+$button-bar-space: 4px;                // The spacing between button bars
+$button-transistion-duration: .3s;     // The transition duration

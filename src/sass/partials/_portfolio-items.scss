@@ -1,0 +1,140 @@
+.portfolio {
+    @include clearfix;
+    //top: $spacing--large;
+    background-color: $white;
+    position: relative;
+    top: 0;
+
+    &__list {
+        @include clearfix;
+    }
+
+    &__item {
+        display: block;
+        margin: 0;
+        position: relative;
+
+        // Desktop
+        @include breakpoint($small) {
+            //lost-column: 1/2 2 0px;
+            lost-column: 1/1;
+        }
+
+        &--active {
+            bottom: 0;
+            display: none;
+            left: 0;
+            opacity: .8;
+            mix-blend-mode: multiply;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+
+    }
+
+    &__image {
+        display: block;
+    }
+
+    &__link {
+        //cursor: url('img/svg/open.svg'), auto;
+        cursor: url('img/svg/open.svg') 33 33, move;
+        display: block;
+        position: relative;
+        transition: all ease-in-out .3s;
+
+        &::before {
+            //background-color: white;
+            background-color: currentColor;
+            bottom: 0;
+            content: '';
+            display: none;
+            left: 0;
+            mix-blend-mode: difference;
+            opacity: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: all .3s cubic-bezier(0.79, 0.02, 0.51, 0.85);
+
+        }
+
+        // HOVER
+        &:hover {
+
+            &::before {
+                opacity: 1;
+                //transition: all .5s ease-in-out;
+            }
+
+        }
+
+    }
+
+}
+// -----------------------------
+// Active portfolio item
+// -----------------------------
+.portfolio {
+
+    &__item {
+
+        &.is-active {
+            cursor: none;
+            border: outline $spacing--small green;
+            //transform: scale(.8);
+            transition: all .3s ease;
+
+            // Image
+            .portfolio {
+
+                &__image {
+
+                }
+
+                &__link {
+                    //border: solid red $spacing--large;
+                    //transition: all ease-in-out .3s;
+
+                    &::before {
+                        opacity: 1;
+                    }
+
+                }
+
+            }
+
+            // Is currently active
+            .portfolio__item--active {
+                display: block;
+            }
+
+        }
+
+    }
+
+}
+
+
+// Animate portfolio item in view
+.portfolio__link {
+    // transform: translateY(400px);
+    // opacity: 0;
+    // opacity: 0;
+    // transform: translate3d(0, 0, 0);
+    // animation-duration: .75s;
+    // animation-fill-mode: both;
+    // backface-visibility: hidden;
+    // transform-style: preserve-3d;
+}
+
+.animate {
+    transform: translate3d(0, 100px, 0);
+    animation-duration: .75s;
+    // transform: translateY(0px);
+    // opacity: 1;
+    // transition: all 4s easein;
+    // transition-delay: 4s;
+}

@@ -1,0 +1,10 @@
+// Function to calculate px to em
+$browser-reset-font: 16 !default; //reset default browser font size to 16px. Dont change.
+
+@function convert-px($px, $font-base: $browser-reset-font) {
+  @return ($px / $font-base) * 1em;
+}
+
+@function set-line-height($font-size, $increase: 50%) {
+  @return ($heading-font-size-large * $increase) / 100%;
+}

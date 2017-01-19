@@ -1,0 +1,70 @@
+.about {
+  background-color: darken($grey, 5%);
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: -1;
+  transition: all ease-in-out .5s;
+  color: $white;
+  transform: scale(.8) translateZ(-400px);
+  transform-origin: 50% 50%;
+
+  .single-portfolio__inner {
+    mix-blend-mode: difference;
+    padding-left: $spacing--small;
+    padding-right: $spacing--small;
+  }
+
+  //Desktop
+  @include breakpoint($medium) {
+    //padding: $spacing--small;
+  }
+
+  // Title
+  &__title {
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin-bottom: 0;
+    @include set-font-size(2rem, 3rem, 3.5rem);
+  }
+
+  &__spot {
+    //animation: pulse 1s infinite;
+  }
+
+  @keyframes pulse {
+
+  0% {
+    opacity: 1;
+    display: none;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+a {
+  color: currentColor;
+}
+
+}
+
+
+
+.about {
+
+  &.is-active {
+    max-height: 1000px;
+    transform: scale(1);
+  }
+
+}

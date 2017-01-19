@@ -1,0 +1,155 @@
+.page-header {
+    left: $spacing--tiny;
+    overflow: hidden;
+    padding: $spacing--tiny $spacing--small;
+    position: fixed;
+    right: $spacing--tiny;
+    transition: background-color ease-in-out .2s;
+    z-index: 200;
+    mix-blend-mode: difference;
+    //top: $spacing--small;
+    //height: 50px;
+    @include clearfix;
+
+    // Desktop
+    @include breakpoint($small) {
+        right: $spacing--small;
+        left: $spacing--small;
+        background: none;
+        top: $spacing--medium;
+        padding: $spacing--tiny $spacing--small;
+    }
+
+    &__href {
+        //display: inline-block;
+    }
+
+  // Logo
+	&__icon {
+        fill: $white;
+        height: 26px;
+        //left: .8rem;
+        position: relative;
+        //top: .8rem;
+        transition: fill ease-in-out .2s;
+        width: 80px;
+	}
+
+    // Dot
+    &__dot {
+        $dimensions: 8px;
+        width: $dimensions;
+        height: $dimensions;
+        display: block;
+        position: absolute;
+        left: 73px;
+        top: 33px;
+        border-radius: 25px;
+        $animation-speed: 50s;
+        animation: gradient_animate $animation-speed ease infinite;
+        background: linear-gradient(45deg, $color--alpha, $color--beta, $color--delta, $color--echo, #113F8C, #01A4A4, #61AE24, #D0D102, #E54028, #F18D05, #D70060, #ffffff) repeat scroll 0 0 / 800% 800%;
+        display: none;
+
+        @keyframes gradient_animate {
+            0% {
+                background-position: 84% 0;
+            }
+
+            50% {
+                background-position: 17% 100%;
+            }
+
+            100% {
+                background-position: 84% 0;
+            }
+
+        }
+    }
+
+    // Dark
+    &.background--light {
+        //background-color: $black;
+        //transition: background-color .3 ease;
+
+        .page-header__icon {
+            //fill: $black;
+    	}
+
+        .ani-color {
+            transform: translateX(-100%);
+        }
+
+    }
+
+    // Light
+    &.background--dark {
+        //background-color: $white;
+        //transition: background-color .3 ease;
+
+        .page-header__icon {
+            //fill: $white;
+    	}
+
+        .ani-color {
+            transform: translateX(0%);
+        }
+
+    }
+
+    // Complex
+    &.background--complex {
+
+    }
+
+}
+
+// Dark
+.ani-color {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .3s ease-in-out;
+    z-index: -1;
+}
+
+
+//Show hide logo
+.hide-on-mobile {
+  display: none;
+
+  // Desktop
+  @include breakpoint($large) {
+    display: inline-block;
+  }
+
+}
+
+// Hide on desktop
+.hide-on-desktop {
+  display: inline-block;
+  left: $spacing--small;
+  position: absolute;
+  top: $spacing--small;
+
+  // Desktop
+  @include breakpoint($large) {
+    display: none;
+  }
+
+}
+
+
+
+
+
+// If JS is not loaded
+body.noscript,
+body.single-portfolio {
+
+    .page-header__href {
+        float: left;
+    }
+
+}

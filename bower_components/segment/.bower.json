@@ -1,0 +1,14 @@
+{
+  "name": "segment",
+  "homepage": "https://github.com/lmgonzalves/segment",
+  "version": "1.0.0",
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.0",
+    "commit": "7101496e19323739cf8e787f4b802f73cfc677df"
+  },
+  "_source": "https://github.com/lmgonzalves/segment.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/lmgonzalves/segment.git"
+}

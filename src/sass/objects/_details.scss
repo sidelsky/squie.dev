@@ -1,0 +1,19 @@
+.o-details {
+    //padding-top: $spacing--large;
+
+    &__title {
+        font-family: $font-primary-black;
+        margin-bottom: 0;
+        //@include set-font-size(2rem, 2rem, 2rem);
+        @include set-font-size(1.8rem, 2rem, 2rem);
+    }
+
+    &__list {
+
+    }
+
+    &__item {
+        @include set-font-size(1.8rem, 2rem, 2rem);
+    }
+
+}
