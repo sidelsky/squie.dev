@@ -23,9 +23,9 @@
     https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/scroll-snap-polyfill.js
 
     if (WP_ENV == 'production') {
-      $scriptFilename = 'app.min.js';
+      $scriptFilename = 'app.js';
     } else {
-      $scriptFilename = 'app.min.js';
+      $scriptFilename = 'app.js';
     }
 
     wp_register_script('theme_js', get_template_directory_uri() . '/assets/build/' . $scriptFilename, array(), '1.1', true);

@@ -2,6 +2,7 @@
     height: 100vh;
     position: relative;
     padding: $spacing--large;
+    //transition: all .5s ease;
 
     &__content {
         @include vertical-align();
@@ -221,6 +222,17 @@ body.single-portfolio {
     .hero__word  {
         opacity: 1;
         transform: translateY(0px);
+    }
+
+}
+
+
+body.is-open {
+
+    .hero {
+        // height: 50vh;
+        // overflow: hidden;
+        // padding: 0;
     }
 
 }

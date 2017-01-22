@@ -129,8 +129,11 @@ Portfolio.prototype._attachHandlers = function($elem) {
             }, 200);
 
             _this.$portfolioItem.removeClass(activeClass);
-
             $(this).addClass(activeClass);
+
+
+            // $('body').removeClass(activeClass);
+            // $('body').addClass(activeClass);
 
             _this.postId = $(this).attr('id').split('portfolio-')[1];
             _this._getPortfolio(_this.postId, $item);
@@ -186,7 +189,7 @@ Portfolio.prototype._getPortfolio = function(postId, dontGet) {
                 next: _this.next,
 				prev: _this.prev
             }, _this._loadCallBack);
-        }, 500);
+        }, 1500);
 
     }
 
