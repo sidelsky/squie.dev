@@ -42,6 +42,7 @@ Portfolio.prototype._infoButtonClick = function() {
   _this = this;
 
   _this.$infoButton.on('click', function() {
+
     _this._scrollToTop();
 
     activeClass = cssClasses.isActive;

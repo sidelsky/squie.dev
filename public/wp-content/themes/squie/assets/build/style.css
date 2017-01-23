@@ -10884,7 +10884,6 @@ body.single-portfolio .page-header__href {
   display: block;
   margin: 0;
   position: relative;
-  border-bottom: 50px solid white;
 }
 
 @media (min-width: 540px) {

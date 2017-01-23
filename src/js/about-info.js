@@ -2,23 +2,22 @@
 /* global window */
 /* global site_data */
 /* jshint -W097 */
+var vue = require('vue');
+var $ = require('jquery');
 
-(function(){
+$(document).ready(function() {
 
-    "use strict";
-    var fullpage = require('vue');
 
-    new Vue({
-      el: '#app',
 
-      ready: function(){
-
-          data: {
-            show: true
-          }
-          
-      }
+    var app = new Vue({
+        el: '#app',
+        data: {
+            //show: true,
+            message: 'Hello Vue.js!'
+        }
 
     });
 
-}());
+    console.log('Cats');
+
+});

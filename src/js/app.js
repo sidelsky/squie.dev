@@ -7,11 +7,6 @@
 var $ = require('jquery');
 
 /*------------------------------------*\
-	Full page
-\*------------------------------------*/
-require('./fullpage');
-
-/*------------------------------------*\
 	Hero title animation
 \*------------------------------------*/
 var $title = $('[data-hero-title]');
@@ -62,12 +57,6 @@ require('./inview');
 	About info
 \*------------------------------------*/
 //require('./about-info');
-
-
-/*------------------------------------*\
-	Skrollr
-\*------------------------------------*/
-//require('./skrollr');
 
 
 //TO GET THEME PATH use site_data.themePath

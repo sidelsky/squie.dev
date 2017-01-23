@@ -13,7 +13,6 @@
         display: block;
         margin: 0;
         position: relative;
-        border-bottom: 50px solid white;
 
         // Desktop
         @include breakpoint($small) {

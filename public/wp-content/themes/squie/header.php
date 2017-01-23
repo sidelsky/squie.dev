@@ -41,13 +41,11 @@
 		?>
 
 
-		<div class="page-wrap" id="app">
+		<div class="page-wrap">
 
     		<header class="page-header" data-header >
 
-                <!--
-                    START: Logo
-                -->
+                <!-- Logo -->
                 <a href="<?php echo home_url(); ?>" class="page-header__href hide-on-mobile" data-logo >
                   <svg class="icon page-header__icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-squie" viewBox="0 0 32 32"></use>
@@ -55,10 +53,8 @@
                   <span class="page-header__dot"></span>
                 </a>
 
-                <!--
-                    START: Info button
-                -->
-                <button class="info-button" data-info-button v-on:click="show = !show" >
+                <!-- Info button -->
+                <button class="info-button" data-info-button >
                   <svg class="icon info-button__info-icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-info" viewBox="0 0 32 32"></use>
                   </svg>
