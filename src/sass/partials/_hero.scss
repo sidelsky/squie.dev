@@ -188,6 +188,10 @@
   fill: #FFFFFF;
   font-size: 15rem;
   line-height: 1;
+
+  &:hover {
+      cursor: pointer;
+  }
   //opacity: 0;
 }
 

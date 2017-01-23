@@ -13,6 +13,7 @@
         display: block;
         margin: 0;
         position: relative;
+        border-bottom: 50px solid white;
 
         // Desktop
         @include breakpoint($small) {
@@ -40,10 +41,10 @@
 
     &__link {
         //cursor: url('img/svg/open.svg'), auto;
-        cursor: url('img/svg/open.svg') 33 33, move;
+        //cursor: url('img/svg/open.svg') 33 33, move;
         display: block;
         position: relative;
-        transition: all ease-in-out .3s;
+        //transition: all ease-in-out .3s;
 
         &::before {
             //background-color: white;
@@ -57,13 +58,16 @@
             position: absolute;
             right: 0;
             top: 0;
-            transition: all .3s cubic-bezier(0.79, 0.02, 0.51, 0.85);
+            //transition: all .3s cubic-bezier(0.79, 0.02, 0.51, 0.85);
 
         }
 
         // HOVER
         &:hover {
-
+                //cursor: url('img/svg/open.svg') 33 33, move;
+                //cursor: url('img/svg/open.svg') 33 33, move;
+                //border: dashed 20px black;
+                cursor: pointer;
             &::before {
                 opacity: 1;
                 //transition: all .5s ease-in-out;
@@ -83,9 +87,9 @@
 
         &.is-active {
             cursor: none;
-            border: outline $spacing--small green;
+            //border: outline $spacing--small green;
             //transform: scale(.8);
-            transition: all .3s ease;
+            //transition: all .3s ease;
 
             // Image
             .portfolio {

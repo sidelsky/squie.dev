@@ -10,11 +10,15 @@
         "echo": "./bower_components/echojs/dist/echo.min.js",
         "BackgroundCheck": "./bower_components/background-check/background-check.js",
         "fullpage": "./bower_components/fullpage/dist/jquery.fullpage.js",
-        "jquery-sticky": "./bower_components/jquery-sticky/jquery.sticky.js"
+        "jquery-sticky": "./bower_components/jquery-sticky/jquery.sticky.js",
+        "vue": "./bower_components/vue/dist/vue.js"
     },
     "browserify-shim": {
         "skrollr": {
             "exports": "skrollr"
+        },
+        "vue": {
+            "exports": "vue"
         },
         "svg-segment": {
             "exports": "svg-segment"

@@ -27,7 +27,8 @@
     "d3-ease": "^0.7.0",
     "echojs": "^1.7.3",
     "background-check": "^1.2.2",
-    "jquery-sticky": "^1.0.3"
+    "jquery-sticky": "^1.0.3",
+    "vue": "^2.1.10"
   },
   "devDependencies": {
     "fullpage.js": "fullpage#^2.9.2",
