@@ -47,14 +47,14 @@
         //background: linear-gradient(45deg, $color--alpha, $color--beta, $color--delta, $color--echo, #113F8C, #01A4A4, #61AE24, #D0D102, #E54028, #F18D05, #D70060, #ffffff) repeat scroll 0 0 / 800% 800%;
         //display: none;
         &.animate {
-            animation: blinker 1s linear infinite;
+            animation: blinker .5s linear infinite;
         }
         @keyframes blinker {
             25% {
                 opacity: 0;
             }
             50% {
-                opacity: 1;
+                opacity: 0;
             }
             75% {
                 opacity: 0;

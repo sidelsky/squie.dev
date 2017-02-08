@@ -38,6 +38,11 @@ var $portfolio = $('[data-portfolio]');
 require('./scroll-to-portfolio.js');
 
 /*------------------------------------*\
+	Sticky cats nav
+\*------------------------------------*/
+require('./sticky-cats.js');
+
+/*------------------------------------*\
 	Background check
 \*------------------------------------*/
 //require('./backgroundcheck');

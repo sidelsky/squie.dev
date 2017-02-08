@@ -32,6 +32,7 @@
     "mixitup": "^3.1.5"
   },
   "devDependencies": {
-
+    "waypoints": "^4.0.1",
+    "dynamics.js": "^1.1.1"
   }
 }

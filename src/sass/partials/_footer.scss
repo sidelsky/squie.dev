@@ -2,7 +2,12 @@
     background-color: $black;
     padding: $spacing--small;
     margin-top: $spacing--small;
+    margin-bottom: $spacing--large + 1.5;
     color: $white;
+
+    p {
+        margin: 0;
+    }
 
 	&__copyright {
 		@include set-font-size(1.2rem, 1.4rem, 1.6rem);

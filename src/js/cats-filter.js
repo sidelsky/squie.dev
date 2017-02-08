@@ -5,7 +5,6 @@
 
 //var vue = require('vue');
 
-"use strict";
 //Slick Slider
 var mixitup = require('mixitup');
 

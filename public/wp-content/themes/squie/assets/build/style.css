@@ -10768,7 +10768,7 @@ body.single-portfolio .door-frame {
 }
 
 .page-header__dot.animate {
-  animation: blinker 1s linear infinite;
+  animation: blinker .5s linear infinite;
 }
 
 @keyframes blinker {
@@ -10776,7 +10776,7 @@ body.single-portfolio .door-frame {
     opacity: 0;
   }
   50% {
-    opacity: 1;
+    opacity: 0;
   }
   75% {
     opacity: 0;
@@ -10833,7 +10833,12 @@ body.single-portfolio .page-header__href {
   background-color: #000;
   padding: 2rem;
   margin-top: 2rem;
+  margin-bottom: 5.5rem;
   color: #fff;
+}
+
+.page-footer p {
+  margin: 0;
 }
 
 .page-footer__copyright {
@@ -11528,4 +11533,48 @@ body.single-portfolio .hero__word {
 
 .prev-next-navigation__image--next {
   margin-left: 10px;
+}
+
+.controls {
+  text-align: center;
+}
+
+.controls__button {
+  font-size: 1.8rem;
+  color: #bbbbbb;
+  font-family: "geomanist-regular-webfont", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+
+@media (min-width: 1024px) {
+  .controls__button {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .controls__button {
+    font-size: 1.8rem;
+  }
+}
+
+.controls__button:hover {
+  cursor: pointer;
+}
+
+.controls__inner {
+  padding: 1rem;
+}
+
+.controls__inner.is-fixed {
+  background-color: #fff;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 200;
+}
+
+.mixitup-control-active {
+  color: #000;
 }
