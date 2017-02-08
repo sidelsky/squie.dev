@@ -1,0 +1,15 @@
+{
+  "name": "mixitup",
+  "homepage": "https://github.com/barrel/mixitup",
+  "version": "3.1.5",
+  "_release": "3.1.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.1.5",
+    "commit": "b9cc9eda32a9f5ea71bdb59f3df0c6b76e3aa373"
+  },
+  "_source": "https://github.com/barrel/mixitup.git",
+  "_target": "^3.1.5",
+  "_originalSource": "mixitup",
+  "_direct": true
+}
