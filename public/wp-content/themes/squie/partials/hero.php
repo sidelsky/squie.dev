@@ -4,7 +4,7 @@
 //echo $color;
 ?>
 
-<div class="hero hero--gradient">
+<div class="hero hero--gradient"  data-hero >
 
 <!-- Logo -->
 <a href="<?php echo home_url(); ?>" class="page-header__href hide-on-desktop" data-logo >
@@ -13,8 +13,11 @@
     </svg>
 </a>
 
+
+<?php include('spinloader.php') ?>
+
     <div class="hero__content">
-        <h1 class="hero__title" data-hero-title >
+        <h1 class="hero__title" >
             <span class="hero__word inro-ani">Digital</span>
             <span class="hero__word inro-ani">Creative</span>
             <span class="hero__word inro-ani">Collaboration.</span>

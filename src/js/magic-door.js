@@ -28,6 +28,7 @@ var Portfolio = function Portfolio($elem) {
     this.$doc = $('html, body');
     this.speed = 700;
     this.dontGet = false;
+    this.logoDot = $('[data-logo-dot]');
 
     this._attachHandlers();
     this._handleLogoClick();
@@ -180,6 +181,9 @@ Portfolio.prototype._getPortfolio = function(postId, dontGet) {
         //$spinloader.fadeIn(200);
         $spinloader.addClass(cssClasses.isVisible);
 
+        // Add animate class to logo dot
+        _this.logoDot.addClass(cssClasses.animate);
+
         setTimeout(function(){
 
             _this._closeDoor();
@@ -224,8 +228,12 @@ Portfolio.prototype._loadCallBack = function(postId) {
         _this._portfolioInit();
         // Update post slug
         //_this._updatePostSlug();
+        
         //Spinloader.fadeOut(300);
         $spinloader.removeClass(cssClasses.isVisible);
+
+        // Add animate class to logo dot
+        _this.logoDot.removeClass(cssClasses.animate);
 
         setTimeout(function() {
             // About panel

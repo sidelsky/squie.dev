@@ -10576,6 +10576,10 @@ body {
   display: block;
 }
 
+.hero .loader__container {
+  display: block;
+}
+
 .door-frame {
   height: 0;
   overflow: hidden;
@@ -10723,7 +10727,7 @@ body.single-portfolio .door-frame {
   padding: 1rem 2rem;
   position: fixed;
   right: 1rem;
-  transition: background-color ease-in-out .2s;
+  transition: background-color ease-in-out 0.2s;
   z-index: 200;
   mix-blend-mode: difference;
 }
@@ -10748,32 +10752,34 @@ body.single-portfolio .door-frame {
   fill: #fff;
   height: 26px;
   position: relative;
-  transition: fill ease-in-out .2s;
+  transition: fill ease-in-out 0.2s;
   width: 80px;
 }
 
 .page-header__dot {
-  width: 8px;
-  height: 8px;
+  width: 5px;
+  height: 5px;
   display: block;
   position: absolute;
-  left: 73px;
+  left: 74px;
   top: 33px;
   border-radius: 25px;
-  animation: gradient_animate 50s ease infinite;
-  background: linear-gradient(45deg, #380568, #9b07a8, #fe2072, #0e0d84, #113F8C, #01A4A4, #61AE24, #D0D102, #E54028, #F18D05, #D70060, #ffffff) repeat scroll 0 0/800% 800%;
-  display: none;
+  background-color: #fff;
 }
 
-@keyframes gradient_animate {
-  0% {
-    background-position: 84% 0;
+.page-header__dot.animate {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  25% {
+    opacity: 0;
   }
   50% {
-    background-position: 17% 100%;
+    opacity: 1;
   }
-  100% {
-    background-position: 84% 0;
+  75% {
+    opacity: 0;
   }
 }
 
@@ -10791,7 +10797,7 @@ body.single-portfolio .door-frame {
   position: absolute;
   right: 0;
   top: 0;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   z-index: -1;
 }
 

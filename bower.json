@@ -28,11 +28,10 @@
     "echojs": "^1.7.3",
     "background-check": "^1.2.2",
     "jquery-sticky": "^1.0.3",
-    "vue": "^2.1.10"
+    "vue": "^2.1.10",
+    "mixitup": "^3.1.5"
   },
   "devDependencies": {
-    "fullpage.js": "fullpage#^2.9.2",
-    "panelsnap": "^0.15.1",
-    "jquery-sticky": "^1.0.3"
+
   }
 }

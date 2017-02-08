@@ -7,20 +7,24 @@
 <?php include('partials/about.php') ?>
 <!--END: About and contact -->
 
-<section role="main" class="portfolio" data-portfolio >
+    <section role="main" class="portfolio" data-portfolio >
 
-    <!-- START: Magic door -->
-    <?php include('partials/magic-door.php'); ?>
-    <!-- END: Magic door -->
+        <!-- START: Magic door -->
+        <?php include('partials/magic-door.php'); ?>
+        <!-- END: Magic door -->
 
-    <!-- START: Hero -->
-    <?php include 'partials/hero.php'; ?>
-    <!-- END: Hero -->
+        <!-- START: Hero -->
+        <?php include 'partials/hero.php'; ?>
+        <!-- END: Hero -->
 
-    <!-- START: Hero -->
-    <?php include 'partials/portfolio-items.php'; ?>
-    <!-- END: Hero -->
+        <!-- START: Tax filter -->
+        <?php include 'partials/tax-filter.php'; ?>
+        <!-- END: Tax filter -->
 
-</section>
+        <!-- START: Hero -->
+        <?php include 'partials/portfolio-items.php'; ?>
+        <!-- END: Hero -->
+
+    </section>
 
 <?php include("footer.php"); ?>

@@ -9,12 +9,12 @@ var $ = require('jquery');
 /*------------------------------------*\
 	Hero title animation
 \*------------------------------------*/
-var $title = $('[data-hero-title]');
+var $hero = $('[data-hero]');
 
-    if ($title.length) {
-        var Title = require('./hero-title');
-        $title.each(function(i, elem) {
-          new Title($(elem));
+    if ($hero.length) {
+        var Hero = require('./hero-title');
+        $hero.each(function(i, elem) {
+          new Hero($(elem));
         });
     }
 
@@ -40,23 +40,22 @@ require('./scroll-to-portfolio.js');
 /*------------------------------------*\
 	Background check
 \*------------------------------------*/
-require('./backgroundcheck');
+//require('./backgroundcheck');
 
 /*------------------------------------*\
 	Sticky logo
 \*------------------------------------*/
-require('./stickyLogo');
+//require('./stickyLogo');
 
 /*------------------------------------*\
 	In view
 \*------------------------------------*/
-require('./inview');
-
+//require('./inview');
 
 /*------------------------------------*\
 	About info
 \*------------------------------------*/
-//require('./about-info');
+require('./cats-filter');
 
 
 //TO GET THEME PATH use site_data.themePath

@@ -30,5 +30,5 @@
   require('functions/custom-post-types.php');
 
   //Custom Taxonomies
-  //require('functions/custom-taxonomies.php');
+  require('functions/custom-taxonomies.php');
 ?>

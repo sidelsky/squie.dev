@@ -1,12 +1,13 @@
 <ul class="portfolio__list" id="portfolio-items" data-portfolio-items >
   <?php
-      // Portfolio args
-      $args = array(
-        'post_type' => 'portfolio',
-        'posts_per_page' => -1,
-        'orderby' => 'post_date',
-        'order' => 'DEC'
-      );
+
+        // Portfolio args
+        $args = array(
+            'post_type' => 'portfolio',
+            'posts_per_page' => -1,
+            'orderby' => 'post_date',
+            'order' => 'DEC'
+        );
 
         // WP Query
         $loop = new WP_Query( $args );
@@ -39,21 +40,42 @@
         $alt = $image_desktop['alt'];
         // Project color
         $color = get_field('color');
+        // Get ID
+        $post_id = get_the_ID();
         // echo '<pre>';
         // var_dump( $image_desktop );
         // echo '</pre>';
     ?>
 
+    <?php
+        //Get the terms
+        $terms = get_the_terms( $post->ID, 'project_type' );
+        if ( $terms && ! is_wp_error( $terms ) ) :
 
-    <li id="portfolio-<?php the_ID(); ?>" class="portfolio__item visible" data-portfolio-item >
+        $links = array();
+
+        foreach ( $terms as $term ) {
+            $links[] = $term->name;
+        }
+
+        $tax_links = join( " ", str_replace(' ', '-', $links));
+        $tax = strtolower($tax_links);
+        else :
+            $tax = '';
+        endif;
+
+        echo '<li id="portfolio-'.$post_id.'" class="portfolio__item visible mix '. $tax .'" data-portfolio-item >';
+    ?>
+
+
 
     <!-- START: Spin loader -->
     <?php include('spinloader.php'); ?>
     <!-- END: Spin loader -->
 
-        <!-- START: Show that this elem is active -->
-      <div class="portfolio__item--active" style="background-color: <?php echo $color; ?>"></div>
-        <!-- END: Show that this elem is active -->
+    <!-- START: Show that this elem is active -->
+    <div class="portfolio__item--active" style="background-color: <?php echo $color; ?>"></div>
+    <!-- END: Show that this elem is active -->
 
             <a href="<?php the_permalink(); ?>" rel="<?php the_ID(); ?>" class="portfolio__link" data-post-link style="color: <?php echo $color; ?>">
                 <figure>

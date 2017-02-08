@@ -50,7 +50,7 @@
                   <svg class="icon page-header__icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-squie" viewBox="0 0 32 32"></use>
                   </svg>
-                  <span class="page-header__dot"></span>
+                  <span class="page-header__dot" data-logo-dot ></span>
                 </a>
 
                 <!-- Info button -->

@@ -14,7 +14,7 @@
     $taxVars			=	array();
 
     //Labels for the new taxonomy
-    $taxLabels			=	array(
+    $taxLabels			  =	array(
       "name"              =>	_x( $titlePlural, "taxonomy general name" ),
       "singular_name"     =>	_x( $titleSingle, "taxonomy singular name" ),
       "search_items"      =>	__( "Search $titlePlural" ),
@@ -31,11 +31,11 @@
     //Arguments
     $taxVars["args"] = array(
       "hierarchical"		=>	true,
-      "labels"			=>	$taxLabels,
-      "show_ui"			=>	true,
+      "labels"			    =>	$taxLabels,
+      "show_ui"			    =>	true,
       "show_admin_column"	=>	true,
       "query_var"			=>	true,
-      "rewrite"			=>	array( "slug" => "$taxSlug" )
+      "rewrite"			    =>	array( "slug" => "$taxSlug" )
     );
 
     //Return the array
@@ -46,8 +46,8 @@
   //Set all of the taxonomies
   function custom_taxonomies() {
 
-    $eventType = create_custom_taxonomy("Event Type", "Event Types", "event_type");
-    register_taxonomy("event_type", array("event"), $eventType["args"]);
+    $eventType = create_custom_taxonomy("Project type", "Project types", "project_type");
+    register_taxonomy("project_type", array("portfolio"), $eventType["args"]);
 
   }
 ?>

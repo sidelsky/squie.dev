@@ -9,12 +9,15 @@
         "ease": "./bower_components/segment/js/ease.min.js",
         "echo": "./bower_components/echojs/dist/echo.min.js",
         "BackgroundCheck": "./bower_components/background-check/background-check.js",
-        "jquery-sticky": "./bower_components/jquery-sticky/jquery.sticky.js",
+        "mixitup": "./bower_components/mixitup/dist/mixitup.js",
         "vue": "./bower_components/vue/dist/vue.js"
     },
     "browserify-shim": {
         "skrollr": {
             "exports": "skrollr"
+        },
+        "mixitup": {
+            "exports": "mixitup"
         },
         "vue": {
             "exports": "vue"

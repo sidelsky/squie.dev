@@ -4,6 +4,7 @@
         speed = 1000,
         $doc = $('html, body'),
         $portfolio = $('[data-portfolio-items]');
+        $taxFilter = $('[data-tax-filter-items]');
 
         $.extend($.easing, {
             def: 'easeInOutQuart',
@@ -19,7 +20,7 @@
     // Scroll function
     function scrollToElem(el) {
         $doc.animate({
-            scrollTop: $portfolio.offset().top
+            scrollTop: $taxFilter.offset().top -30
         }, speed, 'easeInOutQuart');
     }
 
