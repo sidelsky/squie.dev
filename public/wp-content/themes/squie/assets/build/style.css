@@ -11540,8 +11540,8 @@ body.single-portfolio .hero__word {
 }
 
 .controls__button {
-  font-size: 1.8rem;
-  color: #bbbbbb;
+  font-size: 1.6rem;
+  color: #a2a2a2;
   font-family: "geomanist-regular-webfont", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   padding: 0 10px;
@@ -11549,13 +11549,13 @@ body.single-portfolio .hero__word {
 
 @media (min-width: 1024px) {
   .controls__button {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 
 @media (min-width: 1280px) {
   .controls__button {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 

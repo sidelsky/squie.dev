@@ -1,14 +1,11 @@
 .controls {
     text-align: center;
-    // width: 70%;
-    // margin: 0 auto;
     //mix-blend-mode: difference;
 
     //Button
     &__button {
-        @include set-font-size(1.8rem, 1.8rem, 1.8rem);
-        //padding: $spacing--large $spacing--tiny;
-        color: darken($grey, 20%);
+        @include set-font-size(1.6rem, 1.6rem, 1.6rem);
+        color: darken($grey, 30%);
         font-family: $font-primary-regular;
         text-transform: uppercase;
         padding: 0 10px;
