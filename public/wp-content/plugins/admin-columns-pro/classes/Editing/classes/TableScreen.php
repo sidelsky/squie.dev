@@ -326,10 +326,11 @@ class ACP_Editing_TableScreen {
 
 	/**
 	 * @param AC_Column[] $columns
+	 * @param int[]       $rows
 	 *
 	 * @return array
 	 */
-	private function get_column_items( $columns ) {
+	public function get_column_items( $columns, $rows = array() ) {
 		$items = array();
 
 		foreach ( $columns as $column ) {
@@ -339,11 +340,13 @@ class ACP_Editing_TableScreen {
 				continue;
 			}
 
-			$rows = wp_cache_get( $column->get_list_screen()->get_storage_key(), 'editable-rows' );
-
 			if ( ! $rows ) {
-				$rows = $editing->get_strategy()->get_rows();
-				wp_cache_add( $column->get_list_screen()->get_storage_key(), $editing->get_strategy()->get_rows(), 'editable-rows', 60 );
+				$rows = wp_cache_get( $column->get_list_screen()->get_storage_key(), 'editable-rows' );
+
+				if ( ! $rows ) {
+					$rows = $editing->get_strategy()->get_rows();
+					wp_cache_add( $column->get_list_screen()->get_storage_key(), $editing->get_strategy()->get_rows(), 'editable-rows', 60 );
+				}
 			}
 
 			$view_data = $editing->get_view_settings();

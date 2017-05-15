@@ -17,6 +17,11 @@ class ACP_Editing_Addon {
 	private $helper;
 
 	/**
+	 * @var ACP_Editing_TableScreen
+	 */
+	private $table_screen;
+
+	/**
 	 * @since 4.0
 	 */
 	function __construct() {
@@ -29,8 +34,11 @@ class ACP_Editing_Addon {
 		add_action( 'ac/settings/scripts', array( $this, 'settings_scripts' ) );
 
 		// Table screen
+		$this->table_screen = new ACP_Editing_TableScreen();
+	}
 
-		new ACP_Editing_TableScreen();
+	public function table_screen() {
+		return $this->table_screen;
 	}
 
 	/**

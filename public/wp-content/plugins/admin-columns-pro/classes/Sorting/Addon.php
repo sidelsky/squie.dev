@@ -280,7 +280,7 @@ class ACP_Sorting_Addon {
 	public function add_settings( $settings ) {
 		$settings->single_checkbox( array(
 			'name'  => 'show_all_results',
-			'label' => __( "Show all results when sorting. Default is <code>off</code>.", 'codepress-admin-columns' ),
+			'label' => __( "Show all results when sorting.", 'codepress-admin-columns' ) . ' ' . $settings->get_default_text( 'off' ),
 		) );
 	}
 

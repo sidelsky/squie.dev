@@ -1,5 +1,12 @@
 == Changelog ==
 
+= 4.0.4 =
+Release Date: May 2nd, 2017
+
+* [Fixed] Date filtering dropdowns order and options fix
+* [Fixed] Taxonomy dropdown while using inline edit menu now populates correctly
+* [Improved] Horizontal scrolling in table keeps columns width
+
 = 4.0.3 =
 Release Date: April 25th, 2017
 

@@ -78,6 +78,10 @@ class ACP_Editing_Model_Post_Taxonomy extends ACP_Editing_Model {
 			$args['offset'] = ( $request['paged'] - 1 ) * 40;
 			$args['number'] = 40;
 		}
+		
+		if ( isset( $request['search'] ) ) {
+			$args['search'] = $request['search'];
+		}
 
 		$terms = acp_editing_helper()->get_terms_list( $args );
 

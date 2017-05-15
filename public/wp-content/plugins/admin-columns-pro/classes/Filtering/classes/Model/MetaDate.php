@@ -115,7 +115,7 @@ class ACP_Filtering_Model_MetaDate extends ACP_Filtering_Model_Meta {
 		$options = $this->get_date_options_relative( $format );
 
 		if ( ! $options ) {
-			$options = $this->get_date_options( $this->get_meta_values(), $format );
+			$options = $this->get_date_options( $this->get_meta_values(), $format, $this->get_date_format() );
 		}
 
 		return array(

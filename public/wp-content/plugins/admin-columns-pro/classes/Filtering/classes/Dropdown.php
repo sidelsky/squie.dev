@@ -76,6 +76,9 @@ class ACP_Filtering_Dropdown {
 		if ( isset( $args['current_value'] ) ) {
 			$self->set_current_value( $args['current_value'] );
 		}
+		if ( isset( $args['order'] ) ) {
+			$self->set_order( $args['order'] );
+		}
 		if ( isset( $args['empty_option'] ) ) {
 			$self->set_empty_option( $args['empty_option'] );
 		}
