@@ -1,0 +1,68 @@
+/**
+* Publish post box
+*/
+
+#submitdiv {
+
+    width: 280px;
+
+    //Active
+    &.is-active {
+
+        //animation: mymove 5s infinite
+        box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
+
+        h2.hndle {
+
+            color: black;
+
+            &::after {
+
+                color: LightSeaGreen;
+                content: ' - fixed position active';
+                display: inline-block;
+                font-size: .7rem;
+                font-weight: 100;
+                margin-left: 4px;
+                text-transform: uppercase;
+
+            }
+
+
+        }
+
+    }
+
+    // Wrapper
+    .postbox__wrapper {
+
+        margin-bottom: 20px;
+        position: relative;
+        outline: solid 1px red;
+
+    }
+
+}
+
+.fpp__label {
+
+    display: inline-block;
+    left: 55px;
+    position: relative;
+    width: 200px;
+    vertical-align: middle;
+    top: 2px;
+
+}
+
+
+// ID
+.fpp-post-id {
+
+    strong {
+
+        //font-weight: 700;
+
+    }
+
+}

@@ -6,7 +6,11 @@
     var $elem = $('#submitdiv');
         postboxHeight = $elem.height(),
         $toggleButton = $('button', $elem),
+        $inputCheckLabel = $('label .fpp__label', '#fpp-check'),
+        $inputCheck = $('input[type=checkbox]', '#fpp-check'),
+        inputCheckIsChecked = $inputCheck.is(':checked') === true,
         time = null,
+        appTitle = 'FPP',
         $elemWrapper = null,
         $window = $(window);
 
@@ -16,13 +20,34 @@
     function init() {
         windowWidth();
         createPostboxWrapper();
+        chechForChecked();
+        setTimeout(getHeight, 10);
     }
 
     /*
     * Creates a wrapper around the Postbox named 'postboxWrapper'
     */
     function createPostboxWrapper() {
-        $elem.wrap('<div class="postboxWrapper"></div>');
+
+        $elem.wrap('<div class="postbox__wrapper"></div>');
+
+    }
+
+    /**
+    * Check for TRUE or FALSE if checkbox is checked or unchecked
+    */
+    function chechForChecked() {
+
+        if(inputCheckIsChecked) {
+
+            setPostbox();
+
+        } else {
+
+            unSetPostbox();
+
+        }
+
     }
 
     /*
@@ -53,7 +78,7 @@
         setTimeout(function(){
 
             postboxHeight = $elem.height();
-            $elemWrapper = $('.postboxWrapper');
+            $elemWrapper = $('.postbox__wrapper');
             time = 10;
 
             $elemWrapper.css({
@@ -68,6 +93,11 @@
 
             $elem.addClass('is-active');
 
+            /**
+            * Add copy to label
+            */
+            $inputCheckLabel.html(appTitle + ': <strong class="fpp--active">Active</strong>');
+
         }, time);
 
     }
@@ -77,7 +107,7 @@
     */
     function unSetPostbox() {
 
-        var $elemWrapper = $('.postboxWrapper');
+        var $elemWrapper = $('.postbox__wrapper');
 
         $elemWrapper.css({
             'height': ''
@@ -90,6 +120,11 @@
 
         $elem.removeClass('is-active');
 
+        /**
+        * Add copy to label
+        */
+        $inputCheckLabel.html(appTitle + ': <strong>Inactive</strong>');
+
     }
 
     /*
@@ -99,7 +134,7 @@
 
         width = $window.width();
 
-        if (width > 850) {
+        if (width > 850 && inputCheckIsChecked) {
             setPostbox();
         } else {
             unSetPostbox();
@@ -133,12 +168,15 @@
     */
     function getHeight() {
 
-        var elemHeight = $elem.height(),
-            $elemWrapper = $('.postboxWrapper');
+        var additionalHeight = 24;
+
+        var elemHeight = $elem.height() + additionalHeight,
+            $elemWrapper = $('.postbox__wrapper');
 
         $elemWrapper.css({
             'height': elemHeight
         });
+
     }
 
 

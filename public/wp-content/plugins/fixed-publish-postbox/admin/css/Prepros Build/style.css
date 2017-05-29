@@ -1,0 +1,1 @@
+#submitdiv{width:280px}#submitdiv.is-active{box-shadow:4px 4px 10px 0px rgba(0,0,0,0.3)}#submitdiv.is-active h2.hndle{color:black}#submitdiv.is-active h2.hndle::after{color:LightSeaGreen;content:' - fixed position active';display:inline-block;font-size:.7rem;font-weight:100;margin-left:4px;text-transform:uppercase}#submitdiv .postboxWrapper{margin-bottom:20px;position:relative}
